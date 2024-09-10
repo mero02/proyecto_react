@@ -6,7 +6,7 @@ function Persona({ data }) {
     <div className="persona">
       <p>ID: {data?.id}</p>
       <p>Nombre: {data?.nombre}</p>
-      <p>Edad: {data?.edad}</p>
+      <p>Email: {data?.email}</p>
     </div>
   );
 }
@@ -15,7 +15,7 @@ Persona.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.number,
     nombre: PropTypes.string,
-    edad: PropTypes.number,
+    email: PropTypes.string,
   })
 };
 
