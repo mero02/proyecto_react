@@ -1,21 +1,21 @@
 import PropTypes from 'prop-types';
-import './General.css';
+import './General.css'; 
 
-function Persona({ data }) {
+function Mascota({ data }) {
   return (
     <div className="general">
       <p>Nombre: {data?.nombre}</p>
-      <p>Email: {data?.email}</p>
+      <p>Tipo: {data?.tipo}</p>
     </div>
   );
 }
 
-Persona.propTypes = {
+Mascota.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.number,
     nombre: PropTypes.string,
-    email: PropTypes.string,
+    tipo: PropTypes.string,
   })
 };
 
-export default Persona;
+export default Mascota;
